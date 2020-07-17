@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment of third day - 1</title>
+</head>
+
+<body>
+
+	<button ondblclick="my_prog()">Double click for even/odd !!!</button>
+	<script type="text/javascript">
+		function odd_even(a)
+		{
+			if(a % 2 == 0)
+				return 1
+			else
+				return 0
+		}
+		function my_prog()
+		{		
+			let a = prompt("Enter the number to find if it's odd/even: ");
+			let b = odd_even(a)
+			if(b == 1)
+				console.log("The number entered is " + a + " and Number is EVEN");
+			else
+				console.log("The number entered is " + a + " and Number is ODD");
+		}
+
+	</script>
+</body>
+</html>

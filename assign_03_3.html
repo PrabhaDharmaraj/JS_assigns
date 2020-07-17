@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment of third day - 3</title>
+</head>
+
+<body>
+
+	<button ondblclick="my_prog()">Double click to find your grade !!!</button>
+	<script type="text/javascript">
+		
+		function my_prog()
+		{		
+			let a = prompt("Enter the mark: ")
+			cond_mark(a)
+			switch_mark(a)
+		}
+		function cond_mark(a)
+		{
+			console.log("Result from Conditional Statement: ")
+			if (a > 90)
+				console.log("Mark is " + a + " and Grade is O")
+			else if (a > 80)
+				console.log("Mark is " + a + " and Grade is A")
+			else if (a > 70)
+				console.log("Mark is " + a + " and Grade is B")
+			else if (a > 60)
+				console.log("Mark is " + a + " and Grade is C")
+			else if (a > 50)
+				console.log("Mark is " + a + " and Grade is D")
+			else
+				console.log("Mark is " + a + " and the student has Failed")
+		}
+		function switch_mark(a)
+		{
+			console.log("Result from Switch Block: ")
+			switch(true)
+			{
+				case (a > 90): 
+					console.log("Mark is " + a + " and Grade is O"); 
+					break;
+				case (a > 80): 
+					console.log("Mark is " + a + " and Grade is A"); 
+					break;
+				case (a > 70): console.log("Mark is " + a + " and Grade is B"); break;
+				case (a > 60): console.log("Mark is " + a + " and Grade is C"); break;
+				case (a > 50): console.log("Mark is " + a + " and Grade is D"); break;
+				default: console.log("Mark is " + a + " and the student has Failed");
+			}
+		}
+
+	</script>
+</body>
+</html>
